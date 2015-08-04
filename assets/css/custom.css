@@ -1,0 +1,62 @@
+/*
+Error: File to import not found or unreadable: bootstrap-sass/assets/stylesheets/bootstrap-sprockets.
+       Load path: c:/Users/hodor/Documents/resume/Website/assets/css
+        on line 8 of assets/css/custom.scss
+
+3: Version: 1.0.0
+4: Description: Custom scss for home page
+5: Author: Kelley Scanlon
+6: *\/
+7: $icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
+8: @import "bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+9: @import "bootstrap-sass/assets/stylesheets/bootstrap";
+10: // Import Bootstrap Styles
+11: @import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+12: 
+13: $white: #ffffff;
+
+Backtrace:
+assets/css/custom.scss:8
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:67:in `rescue in import'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:45:in `import'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:28:in `imported_file'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:37:in `css_import?'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:157:in `visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:8:in `visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:36:in `css_tree'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/engine.rb:295:in `render_with_sourcemap'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:328:in `block in watch'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `call'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: bootstrap-sass/assets/stylesheets/bootstrap-sprockets.\A        Load path: c:/Users/hodor/Documents/resume/Website/assets/css\A         on line 8 of assets/css/custom.scss\A \A 3: Version: 1.0.0\A 4: Description: Custom scss for home page\A 5: Author: Kelley Scanlon\A 6: */\A 7: $icon-font-path: \"bootstrap-sass/assets/fonts/bootstrap/\";\A 8: @import \"bootstrap-sass/assets/stylesheets/bootstrap-sprockets\";\A 9: @import \"bootstrap-sass/assets/stylesheets/bootstrap\";\A 10: // Import Bootstrap Styles\A 11: @import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';\A 12: \A 13: $white: #ffffff;"; }

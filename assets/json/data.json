@@ -1,0 +1,39 @@
+var data = {
+    "projects": [
+        {
+            "title": "Booze Buddy",
+            "picture": "123",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "title": "LifeLine",
+            "picture": "234",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "title": "Tim & Eric",
+            "picture": "123",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "title": "Human Slayer",
+            "picture": "123",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "title": "Ajax",
+            "picture": "123",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "title": "HvZ App",
+            "picture": "123",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "title": "One Love Boards",
+            "picture": "123",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ]
+}

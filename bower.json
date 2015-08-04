@@ -1,0 +1,28 @@
+{
+  "name": "Kelley Scanlon | Portfolio",
+  "version": "0.0.0",
+  "authors": [
+    "Kelley Scanlon <kelleyscanlon@gmail.com>"
+  ],
+  "description": "Kelley Scanlon's portfolio including resume, projects, and contact.",
+  "keywords": [
+    "Kelley",
+    "Scanlon",
+    "portfolio"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "bootstrap-sass": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "backbone": "~1.2.1"
+  }
+}
