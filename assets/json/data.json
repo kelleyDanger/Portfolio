@@ -1,39 +1,123 @@
-var data = {
-    "projects": [
-        {
-            "title": "Booze Buddy",
-            "picture": "123",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            "title": "LifeLine",
-            "picture": "234",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            "title": "Tim & Eric",
-            "picture": "123",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            "title": "Human Slayer",
-            "picture": "123",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            "title": "Ajax",
-            "picture": "123",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            "title": "HvZ App",
-            "picture": "123",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            "title": "One Love Boards",
-            "picture": "123",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+{
+    "index": {
+        "title": "Index",
+        "quote": "I would love the challenge to demonstrate how my skills, passion, imagination, and invention can benefit your company.",
+        "introduction": [
+            {
+                "title": "Education",
+                "id": "education",
+                "icon": "fa fa-graduation-cap fa-5x",
+                "text": [
+                    {
+                        "key": "Rochester Institute of Technology",
+                        "value": "BS Information Science Technology"
+                    }
+                ]
+            },
+            {
+                "title": "Jobs Seeking",
+                "id": "jobs_seeking",
+                "icon": "fa fa-briefcase fa-5x",
+                "text": [
+                    {
+                        "key": "Front-End Developer",
+                        "value": ""
+                    },
+                    {
+                        "key": "Software Engineer",
+                        "value": ""
+                    },
+                    {
+                        "key": "UI Designer",
+                        "value": ""
+                    },
+                    {
+                        "key": "Android Programmer",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "title": "Favorite Quote",
+                "id": "favorite_quote",
+                "icon": "fa fa-heart fa-5x",
+                "text": [
+                    {
+                        "key": "I am the master of my fate, I am the captain of my soul",
+                        "value": "William Ernest Henley"
+                    }
+                ]
+            }
+        ],
+        "skills": {
+            "title": "Skills",
+            "id": "skills",
+                "icon": "fa fa-trophy fa-5x",
+                "text": [
+                    {
+                        "key": "Front-End Development",
+                        "value": ["jQuery", "Ajax"]
+                    },
+                    {
+                        "key": "NoSQL Databases",
+                        "value": ["MongoDB", "Cassandra"]
+                    },
+                    {
+                        "key": "Templating Engines",
+                        "value": ["SASS", "twig.js", "JsRender"]
+                    },
+                    {
+                        "key": "Package Managers",
+                        "value": ["Compose", "Bower"]
+                    },
+                    {
+                        "key": "Version Controllers",
+                        "value": ["Git", "BitBucket"]
+                    }
+                ]    
         }
-    ]
+        
+    },
+    
+    "projects": {
+        "title": "Projects",
+        
+        "projectList" : [
+            {
+                "title": "Booze Buddy",
+                "picture": "123",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "title": "LifeLine",
+                "picture": "234",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "title": "Tim & Eric",
+                "picture": "123",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "title": "Human Slayer",
+                "picture": "123",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "title": "Ajax",
+                "picture": "123",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "title": "HvZ App",
+                "picture": "123",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "title": "One Love Boards",
+                "picture": "123",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    }
 }

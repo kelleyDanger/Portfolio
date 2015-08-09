@@ -72,13 +72,14 @@
 <!-- /Content -->
     
 
-  <script type="text/template" id="projects-template">
-    PROJECTS
-    <%= projects[0]["title"] %>
-        <% for(var m in projects) { %>  
-              <h3><%= m %></h3>
-            <% }; %>
-    </script>
+	<!-- Templates -->    
+<script type="text/template" id="projects_template">
+<% _.each(projects, function(d) { %>
+            <%= d.title %>
+                <% }); %>
+            
+</script>
+<!-- /Templates --> 
     
 
 </body>
