@@ -10,7 +10,11 @@ var IndexView = Backbone.View.extend({
         render: function() {
             var template = _.template( this.template );
             console.log(this.model.toJSON());
-            this.$el.html(template(this.model.toJSON()));
+            console.log(this.model.toJSON().skills.text);
+            this.$el.html(template({
+                introduction: this.model.toJSON().introduction, 
+                skills: this.model.toJSON().skills
+            }));
         }
     });
 

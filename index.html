@@ -17,8 +17,8 @@
     <!-- Font-Awesome CSS -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Custom-Projects CSS -->
-    <link href="../assets/css/custom-projects.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../assets/css/custom.css" rel="stylesheet">
 
 </head>
 <body>
@@ -66,15 +66,33 @@
     
         <script type="text/template" id="index_template">
         <div class="row">
-            <div id="page_title" class="col-sm-12 col-md-12 col-lg-12">
-                <h4><%= quote %></h4>
+            <div id="introduction-div" class="col-sm-12 col-md-12 col-lg-12 center">
+                <h4><%= introduction.quote %></h4>
                 
-                <% _.each(introduction, function(item) { %>
+                <% _.each(introduction, function(item, id) { %>
                     <div id="<%= item.id %>-div" class="col-xs-12 col-sm-4 col-lg-4">
                         <h3><%= item.title %></h3>
                         <i class="<%= item.icon %>"></i>
+                        <% _.each(introduction[id].text, function(dt, id) { %>
+                            <dt><%= dt.key %></dt>
+                            <% if (dt.description) { %>
+                                <dd><%= dt.description %></dd>
+                            <% } %>
+                        <% }); %>
                     </div>
                 <% }); %>
+            </div>
+            <div id="skills-div" class="col-xs-12 col-sm-12 col-lg-12">
+                <h3><%= skills.title %></h3>
+                <i class="<%= skills.icon %>"></i>
+                <dl>
+                    <% _.each(skills.text, function(skill, id) { %>
+                        <dt><%= skill.key %></dt>
+                        <% _.each(skills.text[id].description, function(desc) { %>
+                            <dd><%= desc %></dd>        
+                        <% }); %>
+                    <% }); %>
+                </dl>
             </div>
         </div>
     </script>

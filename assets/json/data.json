@@ -10,41 +10,41 @@
                 "text": [
                     {
                         "key": "Rochester Institute of Technology",
-                        "value": "BS Information Science Technology"
+                        "description": "BS Information Science Technology"
                     }
                 ]
             },
             {
                 "title": "Jobs Seeking",
-                "id": "jobs_seeking",
+                "id": "jobs-seeking",
                 "icon": "fa fa-briefcase fa-5x",
                 "text": [
                     {
                         "key": "Front-End Developer",
-                        "value": ""
+                        "description": ""
                     },
                     {
                         "key": "Software Engineer",
-                        "value": ""
+                        "description": ""
                     },
                     {
                         "key": "UI Designer",
-                        "value": ""
+                        "description": ""
                     },
                     {
                         "key": "Android Programmer",
-                        "value": ""
+                        "description": ""
                     }
                 ]
             },
             {
                 "title": "Favorite Quote",
-                "id": "favorite_quote",
+                "id": "favorite-quote",
                 "icon": "fa fa-heart fa-5x",
                 "text": [
                     {
                         "key": "I am the master of my fate, I am the captain of my soul",
-                        "value": "William Ernest Henley"
+                        "description": "William Ernest Henley"
                     }
                 ]
             }
@@ -56,23 +56,23 @@
                 "text": [
                     {
                         "key": "Front-End Development",
-                        "value": ["jQuery", "Ajax"]
+                        "description": ["jQuery", "Ajax"]
                     },
                     {
                         "key": "NoSQL Databases",
-                        "value": ["MongoDB", "Cassandra"]
+                        "description": ["MongoDB", "Cassandra"]
                     },
                     {
                         "key": "Templating Engines",
-                        "value": ["SASS", "twig.js", "JsRender"]
+                        "description": ["SASS", "twig.js", "JsRender"]
                     },
                     {
                         "key": "Package Managers",
-                        "value": ["Compose", "Bower"]
+                        "description": ["Compose", "Bower"]
                     },
                     {
                         "key": "Version Controllers",
-                        "value": ["Git", "BitBucket"]
+                        "description": ["Git", "BitBucket"]
                     }
                 ]    
         }

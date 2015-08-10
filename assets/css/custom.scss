@@ -4,9 +4,9 @@ Version: 1.0.0
 Description: Custom scss for home page
 Author: Kelley Scanlon
 */
-$icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
-@import "bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
-@import "bootstrap-sass/assets/stylesheets/bootstrap";
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 // Import Bootstrap Styles
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
@@ -43,30 +43,25 @@ nav {
     background: transparent-color($white, 1.0);
     .row {
         padding: 0 50px 0 50px;
-        #home-banner {
-            background: $white;
-            text-align: center;
-        }
-        &#introduction-div {
-            background: $white;
+        background: $white;
+        div {
+            h2 {margin: 0;}
+            dd {margin: 5px 0 0 30px;}
+            div {margin-bottom: 30px;}
+            i {display: inline-block;}
             h4 {
                 text-align: center;
                 margin: 20px;
             }
             ul {list-style-type: none;}
-            #introduction-text {
-                font-size: 1.25em;
-                h2 {margin: 0;}
-                dd {margin: 5px 0 0 30px;}
-                div {margin-bottom: 30px;}
-                i {
-                    text-align: center;
-                    padding-bottom: 10px;
-                }
-
-            }
         }
     }
+}
+
+/* SPECIAL CLASSES */
+
+.center {
+    text-align: center;   
 }
 
 /* EXTRA SMALL DEVICES
