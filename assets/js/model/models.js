@@ -3,7 +3,6 @@ var url = "/assets/json/data.json";
 var Index = Backbone.Model.extend({
 	url: url,
 	parse: function (response) {
-        console.log("inside Index Model");
 		return response.index
 	}
 });
@@ -25,7 +24,6 @@ var Resume = Backbone.Model.extend({
 var Contact = Backbone.Model.extend({
 	url: url,
 	parse: function (response) {
-        console.log(response.contact);
 		return response.contact
 	}
 });

@@ -8,8 +8,6 @@ var IndexView = Backbone.View.extend({
     },
     render: function() {
         var template = _.template( this.template );
-        console.log(this.model.toJSON());
-        console.log(this.model.toJSON().skills.text);
         this.$el.html(template({
             quote: this.model.toJSON().quote,
             introduction: this.model.toJSON().introduction, 
@@ -29,7 +27,6 @@ var ProjectsView = Backbone.View.extend({
     },
     render: function() {
         var template = _.template( this.template );
-        console.log(this.model.toJSON());
         this.$el.html(template(this.model.toJSON()));
     }
 });
@@ -44,7 +41,6 @@ var ResumeView = Backbone.View.extend({
     },
     render: function() {
         var template = _.template( this.template );
-        console.log(this.model.toJSON());
         this.$el.html(template(this.model.toJSON()));
     }
 });
@@ -59,7 +55,6 @@ var ContactView = Backbone.View.extend({
     },
     render: function() {
         var template = _.template( this.template );
-        console.log(this.model.toJSON());
         this.$el.html(template(this.model.toJSON()));
     }
 });

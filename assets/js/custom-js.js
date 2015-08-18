@@ -2,7 +2,8 @@
     var $window = $(window),
         $html = $('html');
 
-    $('.nav a').on('click', function(){
+    $('.navbar a').on('click', function(){
+        console.log("clicked!");
         $(".navbar-toggle").click() 
     });
   
