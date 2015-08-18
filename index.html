@@ -68,7 +68,7 @@
         <div id="index-div" class="content row">
         
             <div id="introduction-div" class="center col-xs-12">
-                <h4><%= introduction.quote %></h4>
+                <h4><i class="fa fa-quote-left"></i><em>  <%= quote %>  </em><i class="fa fa-quote-right"></i></h4>
                 <% _.each(introduction, function(item, id) { %>
                     <div id="<%= item.id %>-div" class="col-xs-12 col-sm-4">
                         <h3><%= item.title %></h3>

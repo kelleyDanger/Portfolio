@@ -11,6 +11,7 @@ var IndexView = Backbone.View.extend({
         console.log(this.model.toJSON());
         console.log(this.model.toJSON().skills.text);
         this.$el.html(template({
+            quote: this.model.toJSON().quote,
             introduction: this.model.toJSON().introduction, 
             skills: this.model.toJSON().skills
         }));
