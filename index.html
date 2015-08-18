@@ -159,53 +159,59 @@
     </script>
     
     <script type="text/template" id="contact_template">
-        <div class="row">
-            <div id="page_title" class="col-sm-12 col-md-12 col-lg-12">
-                <h1><%= title %></h1>
-            </div>
-        </div>
         <div id="contact-div" class="content row">
-                <div id="content_text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div id="picture-div" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+            <div class="col-xs-12">
+                <div class="vertical-align row">
+                    <div id="picture-div" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <img id="contact-picture" src="<%= picture %>" class="img-responsive">
                     </div>
-                    <div id="info-div" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <% _.each(contacts, function(contact) { %>
-                            <div class="row">
-                                <i class="<%= contact.icon %>"></i>
-                                <strong><%= contact.title %></strong><%= contact.text %>
-                            </div>
-                        <% }); %>
-                    </div>
-                    <div id="message-div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <form>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <div class="form-group">
-                                    <label for="input-email">Email</label>
-                                    <input type="email" class="form-control" id="input-email" placeholder="Email">
+                    <div id="info-div" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="row">
+                            <% _.each(contacts, function(contact) { %>
+                                <div class="col-xs-12">
+                                    <i class="<%= contact.icon %> fa-fw"></i><%= contact.text %>
                                 </div>
-                                <div class="form-group">
-                                    <label for="input-subject">Subject</label>
-                                    <input type="text" class="form-control" id="input-subject" placeholder="Subject">
-                                </div>
-                                <button type="submit" class="btn btn-default">Send</button>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                <div class="form-group">
-                                    <label for="input-message">Message</label>
-                                    <textarea rows="6" class="form-control" id="input-message" placeholder="Email"></textarea>
-                                </div>           
-                            </div>
-                        </form>
-                    </div>
-                    </div>
-                    <div id="social-div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <% _.each(social, function(s) { %>
-                            <a href="<%= s.link %>"><i class="<%= s.icon %>"></i></a>
-                        <% }); %>
+                            <% }); %>
+                        </div>
                     </div>
                 </div>
-        </div> 
+            </div>
+
+            <div id="message-div" class="col-xs-12">
+                <form>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="input-email">Email</label>
+                        <input type="email" class="form-control" id="input-email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-subject">Subject</label>
+                        <input type="text" class="form-control" id="input-subject" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="input-message">Message</label>
+                        <textarea rows="5" class="form-control" id="input-message" placeholder="Email"></textarea>
+                    </div>           
+                </div>
+                <div class="col-xs-12 center">
+                    <button type="submit" class="btn btn-default">Send</button>
+                </div>
+                </form>
+            </div>
+
+            <div id="social-div" class="col-xs-12 center">
+                <div class="row">
+                    <% _.each(social, function(s) { %>
+                    <div class="col-xs-6">
+                        <a href="<%= s.link %>"><i class="<%= s.icon %>"></i></a>
+                    </div>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
     </script>
     
 <!-- /Templates --> 

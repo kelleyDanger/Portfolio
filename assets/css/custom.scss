@@ -42,6 +42,7 @@ nav {
     margin-top: 76px;
     background: transparent-color($white, 1.0);
     .row {
+        padding: 0px;
         background: $white;
         &.content {padding-top: 20px;}
         p {text-indent: 50px;}
@@ -75,7 +76,6 @@ nav {
                 vertical-align: middle;
                 float: none;
             }
-            #social-div {text-align: center;}
         }
     }
 }
@@ -84,6 +84,11 @@ nav {
 
 .center {
     text-align: center;   
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
 
 /* EXTRA SMALL DEVICES
@@ -107,7 +112,7 @@ Tablets (>=768px)
         padding-top: 100px; 
         margin-top: 0; 
         .row {
-            padding: 0 50px 0 50px;
+//            padding: 0 50px 0 50px;
             margin-bottom: 20px; 
             &#projects-div {
                 .source{margin: 0 20px 0 20px;}
@@ -127,7 +132,7 @@ Desktops (>=992px)
         padding-top: 100px; 
         margin-top: 0; 
         .row {
-            margin: 0 50px 0 50px;
+//            margin: 0 50px 0 50px;
             margin-bottom: 20px;   
             #introduction-div {
                 padding: 0px;
@@ -152,7 +157,7 @@ Tablets (>=1200px)
         padding-top: 100px; 
         margin-top: 0; 
         .row {
-            margin: 0 150px 0 150px;
+//            margin: 0 150px 0 150px;
             margin-bottom: 20px;
             #introduction-div {
                 padding: 0px;

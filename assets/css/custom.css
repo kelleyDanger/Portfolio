@@ -11614,6 +11614,7 @@ nav {
   margin-top: 76px;
   background: transparent-color(#ffffff, 1); }
   #content .row {
+    padding: 0px;
     background: #ffffff; }
     #content .row.content {
       padding-top: 20px; }
@@ -11648,12 +11649,14 @@ nav {
       display: inline-block;
       vertical-align: middle;
       float: none; }
-    #content .row#contact-div #social-div {
-      text-align: center; }
 
 /* SPECIAL CLASSES */
 .center {
   text-align: center; }
+
+.vertical-align {
+  display: flex;
+  align-items: center; }
 
 /* EXTRA SMALL DEVICES
 Phones (<768px)
@@ -11674,7 +11677,6 @@ Tablets (>=768px)
     padding-top: 100px;
     margin-top: 0; }
     #content .row {
-      padding: 0 50px 0 50px;
       margin-bottom: 20px; }
       #content .row#projects-div .source {
         margin: 0 20px 0 20px; } }
@@ -11690,7 +11692,6 @@ Desktops (>=992px)
     padding-top: 100px;
     margin-top: 0; }
     #content .row {
-      margin: 0 50px 0 50px;
       margin-bottom: 20px; }
       #content .row #introduction-div {
         padding: 0px;
@@ -11710,7 +11711,6 @@ Tablets (>=1200px)
     padding-top: 100px;
     margin-top: 0; }
     #content .row {
-      margin: 0 150px 0 150px;
       margin-bottom: 20px; }
       #content .row #introduction-div {
         padding: 0px; }
