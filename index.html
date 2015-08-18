@@ -64,11 +64,11 @@
     
 <!-- Templates -->  
     
-        <script type="text/template" id="index_template">
+    <script type="text/template" id="index_template">
         <div id="index-div" class="row">
+        
             <div id="introduction-div" class="col-sm-12 col-md-12 col-lg-12 center">
                 <h4><%= introduction.quote %></h4>
-                
                 <% _.each(introduction, function(item, id) { %>
                     <div id="<%= item.id %>-div" class="col-xs-12 col-sm-4 col-lg-4">
                         <h3><%= item.title %></h3>
@@ -82,6 +82,7 @@
                     </div>
                 <% }); %>
             </div>
+            
             <div id="skills-div" class="col-xs-12 col-sm-12 col-lg-12">
                 <h3><%= skills.title %></h3>
                 <i class="<%= skills.icon %>"></i>
@@ -98,63 +99,59 @@
     </script>
     
     <script type="text/template" id="projects_template">
-        <div class="row">
-            <div id="page_title" class="col-sm-12 col-md-12 col-lg-12">
-                <h1><%= title %></h1>
-            </div>
-        </div>
         <div id="projects-div" class="content row">
-                <div id="content_text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div id="accordion" class="panel-group">
+            <div id="content_text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div id="accordion" class="panel-group">
 
                     <% _.each(projectList, function(project, id) { %>
                         <div class="panel panel-default">
+                        
                             <div class="panel-heading">
-                              <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-<%= id %>">
-                                  <i class="project-icon <%= project.icon %>" style="margin: 0 30px 0 30px"></i><span class="project-title"><%= project.title %></span>
-                                </a><i class="indicator fa fa-chevron-down  pull-right"></i>
-                              </h4>
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-<%= id %>">
+                                        <i class="project-icon <%= project.icon %>" style="margin: 0 30px 0 30px"></i>
+                                        <span class="project-title"><%= project.title %></span>
+                                    </a>
+                                    <i class="indicator fa fa-chevron-down  pull-right"></i>
+                                </h4>
                             </div>
+                            
                             <div id="collapse-<%= id %>" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                <%= project.description %>
-                                <div id="project-sources" class="row">
-                                <% if (project.website) { %>
-                                   <a href="<%= project.website %>" target="_blank"><i class="source fa fa-globe fa-3x"></i></a>
-                                <% } %>
-                                <% if (project.git) { %>
-                                    <a href="<%= project.git %>" target="_blank"><i class="source fa fa-github fa-3x"></i></a>
-                                <% } %>
-                                <% if (project.android) { %>
-                                    <a href="<%= project.android %>" target="_blank"><i class="source fa fa-android fa-3x"></i></a>
-                                <% } %>
+                                <div class="panel-body">
+                                    <%= project.description %>
+                                        <div id="project-sources" class="row">
+                                            <% if (project.website) { %>
+                                                <a href="<%= project.website %>" target="_blank"><i class="source fa fa-globe fa-3x"></i></a>
+                                            <% } %>
+                                            <% if (project.git) { %>
+                                                <a href="<%= project.git %>" target="_blank"><i class="source fa fa-github fa-3x"></i></a>
+                                            <% } %>
+                                            <% if (project.android) { %>
+                                                <a href="<%= project.android %>" target="_blank"><i class="source fa fa-android fa-3x"></i></a>
+                                            <% } %>
+                                        </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
-                          <% }); %>
-                    </div>
+                            
+                        </div>
+                    <% }); %>
+                    
                 </div>
-            </div>    
+            </div>
+        </div>    
     </script>
     
     <script type="text/template" id="resume_template">
-        <div class="row">
-            <div id="page_title" class="col-sm-12 col-md-12 col-lg-12">
-                <h1><%= title %></h1>
-            </div>
-        </div>
         <div id="resume-div" class="content row">
-                <div id="content_text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <%= introduction %>
-                    <div id="resume-download" class="row">
-                        <a href="assets/resume_kelley_scanlon.pdf" download>
-                            <i class="<%= download.icon %>"></i>
-                            <h4>Download Resume PDF</h4>
-                        </a>
-                    </div>
+            <div id="content_text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <%= introduction %>
+                <div id="resume-download" class="row">
+                    <a href="assets/resume_kelley_scanlon.pdf" download>
+                        <i class="<%= download.icon %>"></i>
+                        <h4>Download Resume PDF</h4>
+                    </a>
                 </div>
+            </div>
         </div> 
     </script>
     
