@@ -11658,6 +11658,9 @@ nav {
   display: flex;
   align-items: center; }
 
+.padding-bottom-small {
+  padding-bottom: 10px; }
+
 /* EXTRA SMALL DEVICES
 Phones (<768px)
 */
@@ -11694,8 +11697,7 @@ Desktops (>=992px)
     #content .row {
       margin-bottom: 20px; }
       #content .row #introduction-div {
-        padding: 0px;
-        margin: 0 100px 0 100px; }
+        padding: 0px; }
       #content .row#projects-div .source {
         margin: 0 30px 0 30px; } }
 /* LARGE DEVICES

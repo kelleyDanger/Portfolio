@@ -56,19 +56,23 @@
             "text": [
                 {
                     "key": "Front-End Development",
-                    "description": ["jQuery", "Ajax"]
+                    "description": ["jQuery", "Ajax", "PHP", "JavaScript", "SEO"]
                 },
                 {
-                    "key": "NoSQL Databases",
-                    "description": ["MongoDB", "Cassandra"]
+                    "key": "Programming",
+                    "description": ["OOP", "Java", "C++", "Python", "Android"]
                 },
                 {
                     "key": "Templating Engines",
-                    "description": ["SASS", "twig.js", "JsRender"]
+                    "description": ["SASS", "twig.js", "JsRender", "BackBone"]
+                },
+                {
+                    "key": "Databases",
+                    "description": ["SQL", "MongoDB", "Cassandra", "Security"]
                 },
                 {
                     "key": "Package Managers",
-                    "description": ["Compose", "Bower"]
+                    "description": ["Composer", "Bower"]
                 },
                 {
                     "key": "Version Controllers",

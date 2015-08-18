@@ -65,12 +65,12 @@
 <!-- Templates -->  
     
     <script type="text/template" id="index_template">
-        <div id="index-div" class="row">
+        <div id="index-div" class="content row">
         
-            <div id="introduction-div" class="col-sm-12 col-md-12 col-lg-12 center">
+            <div id="introduction-div" class="center col-xs-12">
                 <h4><%= introduction.quote %></h4>
                 <% _.each(introduction, function(item, id) { %>
-                    <div id="<%= item.id %>-div" class="col-xs-12 col-sm-4 col-lg-4">
+                    <div id="<%= item.id %>-div" class="col-xs-12 col-sm-4">
                         <h3><%= item.title %></h3>
                         <i class="<%= item.icon %>"></i>
                         <% _.each(introduction[id].text, function(dt, id) { %>
@@ -83,17 +83,23 @@
                 <% }); %>
             </div>
             
-            <div id="skills-div" class="col-xs-12 col-sm-12 col-lg-12">
+            <div id="skills-div" class="col-xs-12">
                 <h3><%= skills.title %></h3>
                 <i class="<%= skills.icon %>"></i>
-                <dl>
-                    <% _.each(skills.text, function(skill, id) { %>
-                        <dt><%= skill.key %></dt>
-                        <% _.each(skills.text[id].description, function(desc) { %>
-                            <dd><%= desc %></dd>        
+                
+                <div class="row">
+                    <dl>
+                        <% _.each(skills.text, function(skill, id) { %>
+                            <div id="skills-div" class="padding-bottom-small col-xs-6 col-md-2 col-lg-2">
+                                <dt><%= skill.key %></dt>
+                                <% _.each(skills.text[id].description, function(desc) { %>
+                                    <dd><%= desc %></dd>        
+                                <% }); %>
+                            </div>
                         <% }); %>
-                    <% }); %>
-                </dl>
+                    </dl>
+                </div>
+                
             </div>
         </div>
     </script>
