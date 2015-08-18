@@ -52,31 +52,30 @@
         "skills": {
             "title": "Skills",
             "id": "skills",
-                "icon": "fa fa-trophy fa-5x",
-                "text": [
-                    {
-                        "key": "Front-End Development",
-                        "description": ["jQuery", "Ajax"]
-                    },
-                    {
-                        "key": "NoSQL Databases",
-                        "description": ["MongoDB", "Cassandra"]
-                    },
-                    {
-                        "key": "Templating Engines",
-                        "description": ["SASS", "twig.js", "JsRender"]
-                    },
-                    {
-                        "key": "Package Managers",
-                        "description": ["Compose", "Bower"]
-                    },
-                    {
-                        "key": "Version Controllers",
-                        "description": ["Git", "BitBucket"]
-                    }
-                ]    
+            "icon": "fa fa-trophy fa-5x",
+            "text": [
+                {
+                    "key": "Front-End Development",
+                    "description": ["jQuery", "Ajax"]
+                },
+                {
+                    "key": "NoSQL Databases",
+                    "description": ["MongoDB", "Cassandra"]
+                },
+                {
+                    "key": "Templating Engines",
+                    "description": ["SASS", "twig.js", "JsRender"]
+                },
+                {
+                    "key": "Package Managers",
+                    "description": ["Compose", "Bower"]
+                },
+                {
+                    "key": "Version Controllers",
+                    "description": ["Git", "BitBucket"]
+                }
+            ]    
         }
-        
     },
     
     "projects": {
@@ -84,40 +83,99 @@
         
         "projectList" : [
             {
-                "title": "Booze Buddy",
-                "picture": "123",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            },
-            {
                 "title": "LifeLine",
-                "picture": "234",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                "type": "Android App",
+                "icon": "fa fa-life-ring",
+                "description": "Harnessing the potential of technology, this Android app will empower students by giving them an emergency blue light in their back pocket.  LifeLine’s mission is to significantly decrease underreporting of sexual assault and abuse on college campuses. With the user’s safety a priority, the design is discrete and customizable.  LifeLine allows students immediate contact with campus police, preset emergency contacts, counseling, video and audio recordings securely stored on the cloud, and their own personal Ally.",
+                "website": "",
+                "git": "https://github.com/kelleyDanger/LifeLine",
+                "android": "projects/LineLine.apk"
             },
             {
-                "title": "Tim & Eric",
-                "picture": "123",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                "title": "Booze Buddy",
+                "type": "Android App",
+                "icon": "fa fa-beer",
+                "description": "Conducted market research on existing Android apps to develop a solution for those looking for affordable and local food and drink in their area, sorted by type or price. Encouraged responsible use by incorporating a feature to call a taxi or find safe public transportation home.  UI sketches and prototypes were constructed into a user-friendly and social design utilizing composition patterns."
+            },
+            {
+                "title": "Tim & Eric Show Promotional Website",
+                "type": "Website",
+                "icon": "fa fa-child",
+                "description": "<i>Tim and Eric Awesome Show, Great Job! </i>, being a favorite sketch comedy television show of mine, was the focus of my promotional webpage.  Keeping in mind the audience was the integral focus of this project, therefore special attention was devoted to design, global and local navigation, external and imbedded stylesheets, and validated code."
             },
             {
                 "title": "Human Slayer",
-                "picture": "123",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                "type": "SVG Web Game",
+                "icon": "fa fa-rocket",
+                "description": "The Rules are simple: guide your alien ship using the arrow keys, shoot, and fire at the humans.  Human Slayer applied the unique vector drawing capabilities of SVG into an interactive web game.   Instructions for play were provided to the user through the use of animations and JavaScript.  Primitive SVG shapes were used in combination with curves.<p><em>Note: to be viewed using either Opera or Safari browser due to viewing compatability.</em></p>"
             },
             {
                 "title": "Ajax",
-                "picture": "123",
+                "type": "Ajax",
+                "icon": "",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             },
             {
-                "title": "HvZ App",
-                "picture": "123",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                "title": "Humans Vs Zombies Application Product Design",
+                "type": "Application Design",
+                "icon": "fa fa-male",
+                "description": "Full design of an application to use while playing the beloved live action game of Humans Versus Zombies is the premise of this fun project.  The multipurpose and multifunction application consists of easy to access shortcuts to assist the Humans survivors. Players can keep track of their achievements, map out safezones, GPS locate where zombie hordes are, get tips and tutorials to help survive, but most importantly be able to kick as much zombie butt as possible!  User stories were curated, paper prototypes were developed and tested, only to be made into a website prototype based upon user feedback."
             },
             {
                 "title": "One Love Boards",
-                "picture": "123",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                "type": "Website",
+                "icon": "fa fa-heart",
+                "description": "One of my first adventures into web design, my passion for longboards inspired this multi-paged website.  Prior to the design phase, competitive sites were researched, a list of pro and con features was generated, and much attention was paid to the audience’s needs and wants.  Meaningful and substantial content was produced, user-friendly navigation was put into place, images were manipulated using the GIMP software, and care was placed into cleaning, validating, and commenting all code."
             }
         ]
+    },
+    
+    "resume": {
+        "title": "Resume",
+        "introduction": "<p>I graduated from Rochester Institute of Technology this May with a BS in Information Science Technology.  From my entrepreneurial successes and failures, as well as the many years I’ve worked in an office environment, I have learned the necessity of both individual and collaborate work.  In my time working for various companies, I have implemented an entirely new website with the collaboration of fellow employees and outside contractors, refined my programming skills, and further expanded upon my knowledge by taking advantage of learning opportunities outside of work.  My commitment and motivation to social activism, course work, and the refinement and growth of my craft demonstrates my strong will to develop innovative and creative solutions.</p><p>My passions range from front-end development (jQuery, Ajax), to Android application development and NoSQL databases (MongoDB, Cassandra).  I always focus on writing maintainable, object-oriented code.  I have progressed from writing simple HTML and CSS driven pages on Neopets to developing MVC patterned applications, setting up secure databases, and streamlining the development process through templating engines (twig.js, JsRender), package managers (Bower), and version controllers (Git, BitBucket).</p>",
+        "download": {
+            "link": "assets/resume_kelley_scanlon.pdf",
+            "icon": "fa fa-download fa-4x"
+        }
+    },
+    
+     "contact": {
+         "title": "Contact",
+         "picture": "assets/img/portfolio_contact_large.jpg",
+         "introduction": "<p>Leave a comment or reach out for potential job offers.</p>",
+         "contacts": [
+             {
+                "title": "Address: ",
+                "icon": "fa fa-home fa-4x",
+                "text": "108 Westmoreland Road<br/>Spofford, NH 03462"
+             },
+             {
+                "title": "Phone: ",
+                "icon": "fa fa-mobile fa-4x",
+                "text": "585.434.6263"
+             },
+             {
+                "title": "Email: ",
+                "icon": "fa fa-envelope fa-4x",
+                "text": "kelleyscanlon@gmail.com"
+             }
+         ],
+         "social": [
+             { 
+                "title": "GitHub",
+                 "icon": "fa fa-github fa-3x",
+                 "link": "https://github.com/kelleyDanger"
+             },
+             { 
+                "title": "LinkedIn",
+                 "icon": "fa fa-linkedin fa-3x",
+                 "link": "https://www.linkedin.com/in/kelleyscanlon"
+             },
+             { 
+                "title": "8tracks",
+                 "icon": "assets/img/8tracks_icon_black.svg",
+                 "link": "http://8tracks.com/kscandalous"
+             }
+         ]
     }
 }

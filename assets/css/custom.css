@@ -11614,21 +11614,42 @@ nav {
   margin-top: 76px;
   background: transparent-color(#ffffff, 1); }
   #content .row {
-    padding: 0 50px 0 50px;
     background: #ffffff; }
-    #content .row div h2 {
+    #content .row.content {
+      padding-top: 20px; }
+    #content .row p {
+      text-indent: 50px; }
+    #content .row #introduction-div div h2 {
       margin: 0; }
-    #content .row div dd {
+    #content .row #introduction-div div dd {
       margin: 5px 0 0 30px; }
-    #content .row div div {
+    #content .row #introduction-div div div {
       margin-bottom: 30px; }
-    #content .row div i {
+    #content .row #introduction-div div i {
       display: inline-block; }
-    #content .row div h4 {
+    #content .row #introduction-div div h4 {
       text-align: center;
       margin: 20px; }
-    #content .row div ul {
+    #content .row #introduction-div div ul {
       list-style-type: none; }
+    #content .row #introduction-div div .panel-heading {
+      margin: 0; }
+    #content .row#projects-div #project-sources {
+      margin-bottom: 0; }
+    #content .row#projects-div .source {
+      margin: 0 10px 0 10px; }
+    #content .row#resume-div #resume-download {
+      text-align: center; }
+    #content .row#contact-div #contact-picture {
+      border-radius: 50%; }
+    #content .row#contact-div #info-div .row {
+      padding: 0px;
+      margin: 0px;
+      display: inline-block;
+      vertical-align: middle;
+      float: none; }
+    #content .row#contact-div #social-div {
+      text-align: center; }
 
 /* SPECIAL CLASSES */
 .center {
@@ -11654,7 +11675,9 @@ Tablets (>=768px)
     margin-top: 0; }
     #content .row {
       padding: 0 50px 0 50px;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+      #content .row#projects-div .source {
+        margin: 0 20px 0 20px; } }
 /* 
 MEDIUM DEVICES
 Desktops (>=992px)
@@ -11671,7 +11694,9 @@ Desktops (>=992px)
       margin-bottom: 20px; }
       #content .row #introduction-div {
         padding: 0px;
-        margin: 0 100px 0 100px; } }
+        margin: 0 100px 0 100px; }
+      #content .row#projects-div .source {
+        margin: 0 30px 0 30px; } }
 /* LARGE DEVICES
 Tablets (>=1200px)
 */
@@ -11688,7 +11713,8 @@ Tablets (>=1200px)
       margin: 0 150px 0 150px;
       margin-bottom: 20px; }
       #content .row #introduction-div {
-        padding: 0px;
-        background: red; } }
+        padding: 0px; }
+      #content .row#projects-div .source {
+        margin: 0 40px 0 40px; } }
 
 /*# sourceMappingURL=custom.css.map */

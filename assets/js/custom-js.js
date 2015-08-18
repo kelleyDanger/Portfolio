@@ -21,13 +21,14 @@
     // toggle up and down chevron on Projects accordion
     function toggleChevron(e) {
         console.log("toggling chevron");
-//        $(e.target)
-//            .prev('.panel-heading')
-//            .find("i.indicator")
-//            .toggleClass('fa fa-chevron-down, fa fa-chevron-up');
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".indicator")
+            .toggleClass('fa-chevron-down fa-chevron-up');
     }
     
-    $('#accordion').on('hidden.bs.collapse', toggleChevron);
-    $('#accordion').on('shown.bs.collapse', toggleChevron);
+    // togggle chevrons listener
+    $(document).on('hidden.bs.collapse', '.collapse', toggleChevron);
+    $(document).on('shown.bs.collapse', '.collapse', toggleChevron);
     
 })(jQuery);

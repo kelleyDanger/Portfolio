@@ -1,7 +1,7 @@
 $(document).ready(function() {  
     
     var Router = Backbone.Router.extend({
-
+        
         //greeting: null,
         navigation: null,
         container: null,
@@ -12,7 +12,6 @@ $(document).ready(function() {
 
         initialize: function() {
             // enables back button to work properly
-            console.log("inside intialize");
             Backbone.history.start();  
         },
 
@@ -31,48 +30,19 @@ $(document).ready(function() {
         },
 
         index: function () {
-            console.log("inside index router function!");
-            $("#content").html("INDEX");
             this.index = new IndexView();
-    //        if (this.index == null) {
-    //            this.index = new View1({ model: this.greeting });
-    //        }
-    //
-    //        this.container.myChildView = this.index;
-    //        this.container.render();
         },
 
         projects: function () {
-            console.log("inside projects router function!");
-            $("#content").html("PROJECTS");
-//            if (this.projects == null) {
-                this.projects = new ProjectsView();
-//            }
-    //
-    //        this.container.myChildView = this.projects;
-    //        this.container.render();
+            this.projects = new ProjectsView();
         },
 
         resume: function () {
-            console.log("inside resume router function!");
-            $("#content").html("RESUME");
-    //        if (this.resume == null) {
-    //            this.resume = new View3({ model: this.greeting });
-    //        }
-    //
-    //        this.container.myChildView = this.resume;
-    //        this.container.render();
+            this.resume = new ResumeView();
         },
 
         contact: function () {
-            console.log("inside contact router function!");
-            $("#content").html("CONTACT");
-    //        if (this.resume == null) {
-    //            this.resume = new View3({ model: this.greeting });
-    //        }
-    //
-    //        this.container.myChildView = this.resume;
-    //        this.container.render();
+            this.contact = new ContactView();    
         }
     });
     

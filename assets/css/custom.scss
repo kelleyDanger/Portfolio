@@ -42,18 +42,40 @@ nav {
     margin-top: 76px;
     background: transparent-color($white, 1.0);
     .row {
-        padding: 0 50px 0 50px;
         background: $white;
-        div {
-            h2 {margin: 0;}
-            dd {margin: 5px 0 0 30px;}
-            div {margin-bottom: 30px;}
-            i {display: inline-block;}
-            h4 {
-                text-align: center;
-                margin: 20px;
+        &.content {padding-top: 20px;}
+        p {text-indent: 50px;}
+        #introduction-div {
+            div {
+                h2 {margin: 0;}
+                dd {margin: 5px 0 0 30px;}
+                div {margin-bottom: 30px;}
+                i {display: inline-block;}
+                h4 {
+                    text-align: center;
+                    margin: 20px;
+                }
+                ul {list-style-type: none;}
+                .panel-heading {margin: 0;}
+            }    
+        }
+        &#projects-div {
+            #project-sources {margin-bottom: 0;}
+            .source{margin: 0 10px 0 10px;}
+        }
+        &#resume-div {
+            #resume-download {text-align: center;}
+        }
+        &#contact-div {
+            #contact-picture {border-radius: 50%;}  
+            #info-div .row {
+                padding: 0px; 
+                margin: 0px;
+                display: inline-block;
+                vertical-align: middle;
+                float: none;
             }
-            ul {list-style-type: none;}
+            #social-div {text-align: center;}
         }
     }
 }
@@ -86,7 +108,10 @@ Tablets (>=768px)
         margin-top: 0; 
         .row {
             padding: 0 50px 0 50px;
-            margin-bottom: 20px;   
+            margin-bottom: 20px; 
+            &#projects-div {
+                .source{margin: 0 20px 0 20px;}
+            }
         }
     }
 }
@@ -108,6 +133,9 @@ Desktops (>=992px)
                 padding: 0px;
                 margin: 0 100px 0 100px;
             }
+            &#projects-div {
+                .source{margin: 0 30px 0 30px;}
+            }
         }
     }
 }
@@ -128,9 +156,12 @@ Tablets (>=1200px)
             margin-bottom: 20px;
             #introduction-div {
                 padding: 0px;
-                background: red;
+            }
+            &#projects-div {
+                .source{margin: 0 40px 0 40px;}
             }
         }
     }
 }
 //large-devices
+

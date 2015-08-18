@@ -65,7 +65,7 @@
 <!-- Templates -->  
     
         <script type="text/template" id="index_template">
-        <div class="row">
+        <div id="index-div" class="row">
             <div id="introduction-div" class="col-sm-12 col-md-12 col-lg-12 center">
                 <h4><%= introduction.quote %></h4>
                 
@@ -103,7 +103,7 @@
                 <h1><%= title %></h1>
             </div>
         </div>
-        <div id="page_content" class="row">
+        <div id="projects-div" class="content row">
                 <div id="content_text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div id="accordion" class="panel-group">
 
@@ -112,22 +112,102 @@
                             <div class="panel-heading">
                               <h4 class="panel-title">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-<%= id %>">
-                                  <%= project.title %> 
-                                </a><i class="fa fa-chevron-down  pull-right"></i>
+                                  <i class="project-icon <%= project.icon %>" style="margin: 0 30px 0 30px"></i><span class="project-title"><%= project.title %></span>
+                                </a><i class="indicator fa fa-chevron-down  pull-right"></i>
                               </h4>
                             </div>
-                            <div id="collapse-<%= id %>" class="panel-collapse collapse in">
+                            <div id="collapse-<%= id %>" class="panel-collapse collapse">
                               <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                <%= project.description %>
+                                <div id="project-sources" class="row">
+                                <% if (project.website) { %>
+                                   <a href="<%= project.website %>" target="_blank"><i class="source fa fa-globe fa-3x"></i></a>
+                                <% } %>
+                                <% if (project.git) { %>
+                                    <a href="<%= project.git %>" target="_blank"><i class="source fa fa-github fa-3x"></i></a>
+                                <% } %>
+                                <% if (project.android) { %>
+                                    <a href="<%= project.android %>" target="_blank"><i class="source fa fa-android fa-3x"></i></a>
+                                <% } %>
+                                </div>
                               </div>
                             </div>
                           </div>
                           <% }); %>
                     </div>
                 </div>
-            </div>     
-
+            </div>    
     </script>
+    
+    <script type="text/template" id="resume_template">
+        <div class="row">
+            <div id="page_title" class="col-sm-12 col-md-12 col-lg-12">
+                <h1><%= title %></h1>
+            </div>
+        </div>
+        <div id="resume-div" class="content row">
+                <div id="content_text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <%= introduction %>
+                    <div id="resume-download" class="row">
+                        <a href="assets/resume_kelley_scanlon.pdf" download>
+                            <i class="<%= download.icon %>"></i>
+                            <h4>Download Resume PDF</h4>
+                        </a>
+                    </div>
+                </div>
+        </div> 
+    </script>
+    
+    <script type="text/template" id="contact_template">
+        <div class="row">
+            <div id="page_title" class="col-sm-12 col-md-12 col-lg-12">
+                <h1><%= title %></h1>
+            </div>
+        </div>
+        <div id="contact-div" class="content row">
+                <div id="content_text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div id="picture-div" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <img id="contact-picture" src="<%= picture %>" class="img-responsive">
+                    </div>
+                    <div id="info-div" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <% _.each(contacts, function(contact) { %>
+                            <div class="row">
+                                <i class="<%= contact.icon %>"></i>
+                                <strong><%= contact.title %></strong><%= contact.text %>
+                            </div>
+                        <% }); %>
+                    </div>
+                    <div id="message-div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <form>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="input-email">Email</label>
+                                    <input type="email" class="form-control" id="input-email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-subject">Subject</label>
+                                    <input type="text" class="form-control" id="input-subject" placeholder="Subject">
+                                </div>
+                                <button type="submit" class="btn btn-default">Send</button>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="input-message">Message</label>
+                                    <textarea rows="6" class="form-control" id="input-message" placeholder="Email"></textarea>
+                                </div>           
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    <div id="social-div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <% _.each(social, function(s) { %>
+                            <a href="<%= s.link %>"><i class="<%= s.icon %>"></i></a>
+                        <% }); %>
+                    </div>
+                </div>
+        </div> 
+    </script>
+    
 <!-- /Templates --> 
 
  
@@ -152,5 +232,8 @@
     <!-- Router -->
     <script src="assets/js/router.js"></script>
 <!-- /structure -->
+
+<!-- Custom Javascript -->
+    <script src="assets/js/custom-js.js"></script>
 
 </html>
