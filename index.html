@@ -12,13 +12,13 @@
     <title>Kelley Scanlon | Portfolio </title>
  
     <!-- Bootstrap-Sass CSS -->
-    <link href="../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss" rel="stylesheet">
-    
+    <link href="bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss" rel="stylesheet">
     <!-- Font-Awesome CSS -->
-    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Sweet Alert CSS -->
+    <link href="bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
 
 </head>
 <body>
@@ -182,28 +182,30 @@
                 </div>
             </div>
 
-            <div id="message-div" class="col-xs-12">
-                <form>
+            <div id="message-div" class="center col-xs-12">
+            
+                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    Contact me! Send me a message, comment on my site, or send me a cat gif.
+                </div>
+                
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                        <label for="input-email">Email</label>
-                        <input type="email" class="form-control" id="input-email" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="input-subject">Subject</label>
-                        <input type="text" class="form-control" id="input-subject" placeholder="Subject">
-                    </div>
+                    <form method="post">
+                    
+                        <div id="email" class="form-group">
+                            <label for="input-email">Email</label>
+                            <input type="email" class="input form-control" id="input-email" placeholder="Email..." name="email">
+                            <div id="email-help" class="help"></div>
+                        </div>
+
+                        <div id="message" class="form-group">
+                            <label for="input-message">Message</label>
+                            <textarea rows="5" class="input form-control" id="input-message" placeholder="Message..." name="message"></textarea>
+                            <div id="message-help" class="help"></div>
+                        </div>
+                        
+                        <input type="button" id="sendButton" value="Send" class="btn btn-default"/>
+                    </form>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                        <label for="input-message">Message</label>
-                        <textarea rows="5" class="form-control" id="input-message" placeholder="Email"></textarea>
-                    </div>           
-                </div>
-                <div class="col-xs-12 center">
-                    <button type="submit" class="btn btn-default">Send</button>
-                </div>
-                </form>
             </div>
 
             <div id="social-div" class="col-xs-12 center">
@@ -232,6 +234,8 @@
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
     <!-- Backbone Javascript -->
     <script src="bower_components/backbone/backbone-min.js"></script>
+    <!-- Sweet Alert Javascript -->
+    <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
 <!-- /libraries -->
 
 <!-- structure -->

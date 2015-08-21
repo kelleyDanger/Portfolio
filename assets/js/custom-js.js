@@ -2,13 +2,12 @@
     var $window = $(window),
         $html = $('html');
 
+    // close navigation on link click
     $('.navbar a').on('click', function(){
         console.log("clicked!");
         $(".navbar-toggle").click() 
     });
   
-    
-    
     // toggle up and down chevron on Projects accordion
     function toggleChevron(e) {
         $(e.target)

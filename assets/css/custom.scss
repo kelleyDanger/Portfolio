@@ -10,14 +10,20 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // Import Bootstrap Styles
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
+/* COLORS */
+
+$warning-red: #d9534f;
+
+$blueberry: #046380;
+$blue: #3bbfce;
+
 $white: #ffffff;
 $offwhite: #EFECE6;
 $greywhite: #F2F2F2;
-$blueberry: #046380;
-$blue: #3bbfce;
+
 $black: #000000;
 
-
+/* /colors */
 
 @mixin transparent-color($color, $percent) {
     background: rgba($color, $percent);
@@ -77,6 +83,12 @@ nav {
                 display: inline-block;
                 vertical-align: middle;
                 float: none;
+            }
+            #message-div {
+                .help {color: $warning-red;}
+                input:-webkit-autofill {
+                    -webkit-box-shadow: 0 0 0px 1000px white inset; // change default 'yellow' bg from Chrome Autofill
+                }
             }
         }
     }

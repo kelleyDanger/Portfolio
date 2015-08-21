@@ -11597,6 +11597,8 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/* COLORS */
+/* /colors */
 html, body {
   height: 100%;
   background: url(../img/offwhite_carbon_fibre_background.png) repeat center center fixed;
@@ -11649,6 +11651,10 @@ nav {
       display: inline-block;
       vertical-align: middle;
       float: none; }
+    #content .row#contact-div #message-div .help {
+      color: #d9534f; }
+    #content .row#contact-div #message-div input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px white inset; }
 
 /* SPECIAL CLASSES */
 .center {
