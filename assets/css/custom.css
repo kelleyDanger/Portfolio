@@ -11619,7 +11619,7 @@ nav {
     padding: 0px;
     background: #ffffff; }
     #content .row.content {
-      padding-top: 20px 20px 0 20px; }
+      padding: 20px 20px 0 20px; }
     #content .row p {
       text-indent: 50px; }
     #content .row #introduction-div div h2 {
