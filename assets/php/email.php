@@ -31,7 +31,7 @@
         
         // if no errors, attempt email =======================================
         if( empty($return['errors']) ) {
-            if( emailSent() ) {
+            if( emailSent($data) ) {
                 $return['success'] = true;  
             } else {
                 $return['success'] = false;
@@ -50,7 +50,7 @@
         return filter_var( $email, FILTER_VALIDATE_EMAIL );       
     }
 
-    function emailSent() {
+    function emailSent($data) {
         // email attributes
         $to =       'kelleyscanlon@gmail.com';
         $subject =  'Portfolio Comment';
