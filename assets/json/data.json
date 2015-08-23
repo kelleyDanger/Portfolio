@@ -149,18 +149,13 @@
          "introduction": "<p>Leave a comment or reach out for potential job offers.</p>",
          "contacts": [
              {
-                "title": "Address: ",
-                "icon": "fa fa-home fa-4x",
-                "text": "108 Westmoreland Road<br/>Spofford, NH 03462"
-             },
-             {
                 "title": "Phone: ",
-                "icon": "fa fa-mobile fa-4x",
+                "icon": "fa fa-phone fa-5x",
                 "text": "585.434.6263"
              },
              {
                 "title": "Email: ",
-                "icon": "fa fa-envelope fa-4x",
+                "icon": "fa fa-envelope fa-5x",
                 "text": "kelleyscanlon@gmail.com"
              }
          ],

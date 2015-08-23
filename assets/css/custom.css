@@ -11685,10 +11685,8 @@ Tablets (>=768px)
   #content {
     padding-top: 100px;
     margin-top: 0; }
-    #content .row {
-      margin-bottom: 20px; }
-      #content .row#projects-div .source {
-        margin: 0 20px 0 20px; } }
+    #content .row#projects-div .source {
+      margin: 0 20px 0 20px; } }
 /* 
 MEDIUM DEVICES
 Desktops (>=992px)
@@ -11700,12 +11698,10 @@ Desktops (>=992px)
   #content {
     padding-top: 100px;
     margin-top: 0; }
-    #content .row {
-      margin-bottom: 20px; }
-      #content .row #introduction-div {
-        padding: 0px; }
-      #content .row#projects-div .source {
-        margin: 0 30px 0 30px; } }
+    #content .row #introduction-div {
+      padding: 0px; }
+    #content .row#projects-div .source {
+      margin: 0 30px 0 30px; } }
 /* LARGE DEVICES
 Tablets (>=1200px)
 */
@@ -11718,11 +11714,9 @@ Tablets (>=1200px)
   #content {
     padding-top: 100px;
     margin-top: 0; }
-    #content .row {
-      margin-bottom: 20px; }
-      #content .row #introduction-div {
-        padding: 0px; }
-      #content .row#projects-div .source {
-        margin: 0 40px 0 40px; } }
+    #content .row #introduction-div {
+      padding: 0px; }
+    #content .row#projects-div .source {
+      margin: 0 40px 0 40px; } }
 
 /*# sourceMappingURL=custom.css.map */
