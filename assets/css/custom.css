@@ -11637,6 +11637,8 @@ nav {
       list-style-type: none; }
     #content .row #introduction-div div .panel-heading {
       margin: 0; }
+    #content .row#projects-div .project-title {
+      font-size: 1.25em; }
     #content .row#projects-div #project-sources {
       margin-bottom: 0; }
     #content .row#projects-div .source {

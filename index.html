@@ -117,7 +117,7 @@
                                                 
                             <div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-<%= id %>">
                                 <h4 class="panel-title">
-                                    <i class="project-icon <%= project.icon %>" style="margin: 0 30px 0 30px"></i>
+                                    <i class="project-icon <%= project.icon %> fa-2x" style="margin: 0 30px 0 30px"></i>
                                     <span class="project-title"><%= project.title %></span>
                                     </a>
                                     <i class="indicator fa fa-chevron-down  pull-right"></i>
@@ -126,8 +126,8 @@
                             
                             <div id="collapse-<%= id %>" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <%= project.description %>
-                                        <div id="project-sources" class="row">
+                                    <p><%= project.description %></p>
+                                        <div id="project-sources" class="center row">
                                             <% if (project.website) { %>
                                                 <a href="<%= project.website %>" target="_blank"><i class="source fa fa-globe fa-3x"></i></a>
                                             <% } %>
