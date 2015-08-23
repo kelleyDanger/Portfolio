@@ -66,6 +66,7 @@ var ContactView = Backbone.View.extend({
         
         // remove errors as soon as form is submitted again
         $('.form-group').removeClass('has-error');
+        $('.help').text('');
         
         // get message form attributes
         var data = {
@@ -76,28 +77,12 @@ var ContactView = Backbone.View.extend({
         
         console.log(data);
         
-//        // check for non-null values
-//        var validData = true;
-//        
-//        for(var key in data) {
-//            if(!data[key]) {
-//                $('#'+key).addClass('has-error');
-//                $('#'+key+'-help').show();
-//                validData = false;
-//            }
-//        }
-//        
-//        // add submit to data for form click validation
-//        data['submit'] = $('#sendButton').val();
-        
-//        if (validData) {
             // process the form
             $.ajax({
                 dataType:   'json',
                 type:       'POST',
                 url:        '/assets/php/email.php',
                 data:       data,
-    //            encode:     true,
                 success: function(response) {
                     console.log(response);
                     
@@ -131,8 +116,7 @@ var ContactView = Backbone.View.extend({
                 error: function() {
                     console.log('there was a problem checking the fields');
                 }
-            });    
-//        }
+            });   
         
     } // sendMessage
 });
