@@ -113,9 +113,9 @@
                 <div id="accordion" class="panel-group">
 
                     <% _.each(projectList, function(project, id) { %>
-                        <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-<%= id %>">
+                        <div class="panel panel-default">
                                                 
-                            <div class="panel-heading">
+                            <div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-<%= id %>">
                                 <h4 class="panel-title">
                                     <i class="project-icon <%= project.icon %>" style="margin: 0 30px 0 30px"></i>
                                     <span class="project-title"><%= project.title %></span>
