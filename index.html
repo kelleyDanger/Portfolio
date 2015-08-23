@@ -126,18 +126,27 @@
                             
                             <div id="collapse-<%= id %>" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <p><%= project.description %></p>
-                                        <div id="project-sources" class="center row">
-                                            <% if (project.website) { %>
-                                                <a href="<%= project.website %>" target="_blank"><i class="source fa fa-globe fa-3x"></i></a>
-                                            <% } %>
-                                            <% if (project.git) { %>
-                                                <a href="<%= project.git %>" target="_blank"><i class="source fa fa-github fa-3x"></i></a>
-                                            <% } %>
-                                            <% if (project.android) { %>
-                                                <a href="<%= project.android %>" target="_blank"><i class="source fa fa-android fa-3x"></i></a>
-                                            <% } %>
-                                        </div>
+                                
+                                    <div class="project-type padding-bottom-small">
+                                        <strong>Type:</strong><span class="tabbed"><%= project.type %></span>
+                                    </div>
+                                    
+                                    <div class="project-description">
+                                        <p><%= project.description %></p>
+                                    </div>
+                                    
+                                    <div id="project-sources" class="center row">
+                                        <% if (project.website) { %>
+                                            <a href="<%= project.website %>" target="_blank"><i class="source fa fa-globe fa-3x"></i></a>
+                                        <% } %>
+                                        <% if (project.git) { %>
+                                            <a href="<%= project.git %>" target="_blank"><i class="source fa fa-github fa-3x"></i></a>
+                                        <% } %>
+                                        <% if (project.android) { %>
+                                            <a href="<%= project.android %>" target="_blank"><i class="source fa fa-android fa-3x"></i></a>
+                                        <% } %>
+                                    </div>
+                                    
                                 </div>
                             </div>
                             

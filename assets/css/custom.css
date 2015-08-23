@@ -11639,6 +11639,10 @@ nav {
       margin: 0; }
     #content .row#projects-div .project-title {
       font-size: 1.25em; }
+    #content .row#projects-div .project-type {
+      font-size: 1.3em; }
+    #content .row#projects-div .project-description {
+      font-size: 1.2em; }
     #content .row#projects-div #project-sources {
       margin-bottom: 0; }
     #content .row#projects-div .source {
@@ -11668,6 +11672,9 @@ nav {
 
 .padding-bottom-small {
   padding-bottom: 10px; }
+
+.tabbed {
+  margin-left: 15px; }
 
 /* EXTRA SMALL DEVICES
 Phones (<768px)

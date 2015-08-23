@@ -70,6 +70,8 @@ nav {
         }
         &#projects-div {
             .project-title {font-size: 1.25em;}
+            .project-type {font-size: 1.3em;}
+            .project-description {font-size: 1.2em;}
             #project-sources {margin-bottom: 0;}
             .source{margin: 0 10px 0 10px;}
         }
@@ -108,6 +110,10 @@ nav {
 
 .padding-bottom-small {
     padding-bottom: 10px;
+}
+
+.tabbed {
+    margin-left: 15px;   
 }
 
 /* EXTRA SMALL DEVICES
