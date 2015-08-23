@@ -162,17 +162,17 @@
          "social": [
              { 
                 "title": "GitHub",
-                 "icon": "fa fa-github fa-3x",
+                 "icon": "fa fa-github",
                  "link": "https://github.com/kelleyDanger"
              },
              { 
                 "title": "LinkedIn",
-                 "icon": "fa fa-linkedin fa-3x",
+                 "icon": "fa fa-linkedin",
                  "link": "https://www.linkedin.com/in/kelleyscanlon"
              },
              { 
                 "title": "8tracks",
-                 "icon": "assets/img/8tracks_icon_black.svg",
+                 "icon": "icon-8tracks",
                  "link": "http://8tracks.com/kscandalous"
              }
          ]

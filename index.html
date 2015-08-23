@@ -19,6 +19,8 @@
     <link href="bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="assets/css/custom.css" rel="stylesheet">
+    <!-- Icon CSS -->
+    <link href="assets/css/icons.css" rel="stylesheet">
 
 </head>
 <body>
@@ -216,7 +218,7 @@
                     <div class="row">
                         <% _.each(social, function(s) { %>
                         <div class="col-xs-4">
-                            <a href="<%= s.link %>" target="_blank"><i class="<%= s.icon %>"></i></a>
+                            <a href="<%= s.link %>" target="_blank"><i class="<%= s.icon %> fa-3x"></i></a>
                         </div>
                         <% }); %>
                     </div>
