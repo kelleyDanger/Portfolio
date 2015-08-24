@@ -97,9 +97,12 @@
             },
             {
                 "title": "Booze Buddy",
-                "type": "Android App",
+                "type": "Cordova Android App",
                 "icon": "fa fa-beer",
-                "description": "Conducted market research on existing Android apps to develop a solution for those looking for affordable and local food and drink in their area, sorted by type or price. Encouraged responsible use by incorporating a feature to call a taxi or find safe public transportation home.  UI sketches and prototypes were constructed into a user-friendly and social design utilizing composition patterns."
+                "description": "Booze Buddy is built as a Cordova project.  Market research was conducted on existing Android apps to develop a solution for those looking for affordable, local food and drink in their area, sorted by type or price. Responsiblilty is incorporated with a feature to call a taxi or find safe public transportation home.  UI sketches and prototypes were constructed into a user-friendly and social design utilizing composition patterns.",
+                "website": "",
+                "git": "https://github.com/kelleyDanger/BoozeBuddy",
+                "android": ""
             },
             {
                 "title": "Tim & Eric Show Promotional Website",
