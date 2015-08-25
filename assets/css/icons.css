@@ -55,3 +55,5 @@
 }
  
 .icon-8tracks:before { content: '\e800'; } /* '' */
+.icon-globe:before { content: '\e801'; } /* '' */
+.icon-pokeball:before { content: '\e802'; } /* '' */
