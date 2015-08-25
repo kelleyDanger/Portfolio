@@ -110,8 +110,8 @@
                 "icon": "icon-pokeball",
                 "description": "Match the cards to capture the Pokemon!  Just be careful though, every wrong answer is a point lost.  This entertaining memory challenge Android game features animations and image resources that add to the excitement.  Colors, strings, and animations have all been defined in their appropriate xml files.  Just a warning, don't be too disappointed with a horrible score. You have been warned in the title: Impossible Challenge.",
                 "website": "",
-                "git": "https://github.com/kelleyDanger/Impossible-Pokemon-Memory-Game",
-                "android": "ImpossiblePokemonMemoryChallenge.apk"
+                "git": "https://github.com/kelleyDanger/Impossible-Pokemon-Memory-Challenge",
+                "android": "/projects/ImpossiblePokemonMemoryChallenge.apk"
             },
             {
                 "title": "Tim & Eric Show Promotional Website",
