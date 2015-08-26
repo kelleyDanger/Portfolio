@@ -129,10 +129,13 @@
                 "android": ""
             },
             {
-                "title": "Ajax",
-                "type": "Ajax",
-                "icon": "",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                "title": "RESTful Web Service",
+                "type": "AJAX, jQuery",
+                "icon": "fa fa-user-md",
+                "description": "Using jQuery and AJAX to access and digest a RESTful service, this project showcased the ability to search data based on various inputs.  The supplied WADL was used to service the dynamic creation, animation, form validation, and browser detection and redirection.",
+                "website": "http://people.rit.edu/~kas3101/240/ajax/index.html",
+                "git": "https://github.com/kelleyDanger/RESTful-Web-Service",
+                "android": ""
             },
             {
                 "title": "Humans Vs Zombies Application Product Design",
